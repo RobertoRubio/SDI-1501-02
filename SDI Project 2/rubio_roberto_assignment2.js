@@ -8,19 +8,19 @@
 var social = "Google+";
 var theBest = true;
 var numFriends = 5;
-var returnBoolean;
+
 
 //Procedure 
-var myProcedure = function () {
+var getHelp = function () {
     myPrompt = prompt("Which Social Media website is the best for posting pics?", social);
     if (myPrompt === social) {
         console.log("I know I love it too!");
-    } else {
-        console.log("I really don't agree with you on that one.");
+    }  else {
+        console.log("Eh, that one is ok but I use " + social + " more.");
     }
-};
+ };
 
-//Confirm and Boolean Function While Loop
+/*//Confirm and Boolean Function While Loop
 var ask = function () {
     var myConfirm = confirm("I couldn't hear you. Isn't " + social + " the best?");
     return myConfirm;
@@ -59,16 +59,16 @@ var otherFriends = function () {
     everyone = "Oh yeah that's right their names are " + otherFriendsNames + ". I almost forgot.";
     return everyone;
 };
-
+*/
 
 
 //Main Code
 console.log("I have a bunch of pictures I want to post online and I'd like you to help me out.");
 
 //Procedure
-myProcedure();
+getHelp();
 
-//Confirm
+/*//Confirm
 var myConfirm = ask();
 
 //Boolean Function Return
@@ -84,4 +84,18 @@ var nameAll = otherFriends();
 console.log(nameAll);
 
 //Final Output
-console.log("I think we are all done here. Thanks so much for helping me post and tag this picture to " + social + ". And for helping rember everyone's names.");
+console.log("I think we are all done here. Thanks so much for helping me post and tag this picture to " + social + ". And for helping remember everyone's names.");*/
+
+
+// Function Practice
+
+
+var pi = 3.14159;
+
+var getArea = function () {
+    console.log("getArea fired!");
+};
+
+console.log("I'm first");
+
+getArea();
