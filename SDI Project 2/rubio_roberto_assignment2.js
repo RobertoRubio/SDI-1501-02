@@ -12,11 +12,11 @@ var numFriends = 5;
 
 //Procedure 
 var getHelp = function () {
-    myPrompt = prompt("Which Social Media website is the best for posting pics?", social);
+    myPrompt = prompt("Do you think " + social + " or Facebook would be better to use for this project?");
     if (myPrompt === social) {
         console.log("I know I love it too!");
     }  else {
-        console.log("Eh, that one is ok but I use " + social + " more.");
+        console.log("Eh, it's ok but I use " + social + " more.");
     }
  };
 
