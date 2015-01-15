@@ -7,7 +7,7 @@
 //My Variables
 var social = "Google+";
 var theBest = true;
-var numFriends = 5;
+var maxPhotos = 1;
 
 
 //Procedure
@@ -21,39 +21,43 @@ function getHelp (p) {
  };
 
 
+//Confirm Function
+
+function getAnswer (){
+    var askIfReady = confirm("Are you ready to start posting these pics?");
+    return askIfReady;
+};
+
+
 //Boolean Function
 
 
 
 
+//Number Function
 
-
-/**********BAD CODE********* BAD CODE***********
-    var returnBoolean = function (myConfirm, theBest) {
-    var movingON;
-    while (myConfirm != theBest) {
-        if (myConfirm && theBest) {
-            console.log("OK OK I think I've made my point.");
-        } else {
-            var askAgain = confirm ("Let's try this again. Is'nt " + social + " the best?");
- console.log("Just say it is already. Please!");
- }
- }
- movingON = "Let's move on then. Obviously " + social + " being the best is " + myConfirm + ".";
-        return movingON;
+function upLoad(mp){
+      for (mp; mp < 11; mp ++){
+        console.log("Uploading " + mp + " photo.");
+      }
+      var totalPhoto = mp -1;
+        return totalPhoto;
+};
+/*var numberOfPhotos = function () {
+    var countPhotos = prompt ("How many photos are we uploading?");
+    countPhotos = parseInt(countPhotos);
+    return countPhotos;
 };
 
-
-//Number Function
-var taggedFriends = function () {
-    var countFriends = prompt ("How many friends are in the photo? That way I can tag them.", "1-5");
-    countFriends = parseInt(countFriends);
-    for (var countFriends; countFriends < numFriends; countFriends ++){
-        var friendsLeft = numFriends - countFriends;
-        console.log("I think I see " + friendsLeft + " more friends in this picture.");
-    };
-        totalFriends = "Alright we found and tagged all " + numFriends + " of our friends in the photo!";
-        return totalFriends;
+function photoUpload(cp){
+    for (cp; cp >= 0; cp --){
+        console.log(cp + " photos are left to upload.");
+    }
+};
+  88888888888888888888888888888888888888888888888 
+   /*
+        var totalPhotos = console.log"Alright we uploaded all " + cp + " of our photos!";
+        return totalPhotos;
 };
 
 
@@ -71,29 +75,33 @@ var otherFriends = function () {
 alert("I have a bunch of pictures I want to post online and I'd like you to help me out.");
 
 //Prompt
-
 var myPrompt = prompt("Do you think " + social + " or Facebook would be better to use for this project?");
 
 //Procedure call
 
 getHelp(myPrompt);
 
-//Confirm
+//confirm Function Call
 
-var askIfReady = confirm("Are you ready to start posting these pics?");
+var askIfReady = getAnswer();
+console.log(askIfReady);
 
+//Boolean Function Call
+alert("lets start uploading!");
+var totalPhoto = upLoad(maxPhotos);
+alert("You have successfully uploaded " + totalPhoto + " photos to " + social + " !");
+//Number Function Return
+/*
+var countPhotos = numberOfPhotos();
+alert("Let's get started!");
+photoUpload(countPhotos);
+alert("you have successfully uploaded all " + countPhotos + " of your photos!");
+88888888888888888888888888888888888888888888888888888888888888888888888888888
+*/
 
-//Boolean Function Return
+//console.log(finalCount);
 
-
-
-//console.log(getGoing);
-
-/*//Number Function Return
-var finalCount = taggedFriends();
-console.log(finalCount);
-
-//String Function Return
+/*//String Function Return
 var nameAll = otherFriends();
 console.log(nameAll);
 
