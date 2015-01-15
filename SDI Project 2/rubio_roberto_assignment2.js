@@ -10,32 +10,36 @@ var theBest = true;
 var numFriends = 5;
 
 
-//Procedure 
-var getHelp = function () {
-    myPrompt = prompt("Do you think " + social + " or Facebook would be better to use for this project?");
-    if (myPrompt === social) {
+//Procedure
+
+function getHelp (p) {
+    if (p === social) {
         console.log("I know I love it too!");
     }  else {
         console.log("Eh, it's ok but I use " + social + " more.");
     }
  };
 
-/*//Confirm and Boolean Function While Loop
-var ask = function () {
-    var myConfirm = confirm("I couldn't hear you. Isn't " + social + " the best?");
-    return myConfirm;
-};
-var returnBoolean = function (myConfirm, theBest) {
+
+//Boolean Function
+
+
+
+
+
+
+/**********BAD CODE********* BAD CODE***********
+    var returnBoolean = function (myConfirm, theBest) {
     var movingON;
-    if (myConfirm === theBest) {
-        console.log("OK OK I think I've made my point.");
-    } else {
-        while (myConfirm != theBest) {
-        var myConfirm = confirm ("Let's try this again. Is'nt " + social + " the best?");
-        console.log("Just say it is already. Please!");
-        }
-    }
-    movingON = "Let's move on then. Obviously " + social + " being the best is " + myConfirm + ".";
+    while (myConfirm != theBest) {
+        if (myConfirm && theBest) {
+            console.log("OK OK I think I've made my point.");
+        } else {
+            var askAgain = confirm ("Let's try this again. Is'nt " + social + " the best?");
+ console.log("Just say it is already. Please!");
+ }
+ }
+ movingON = "Let's move on then. Obviously " + social + " being the best is " + myConfirm + ".";
         return movingON;
 };
 
@@ -61,21 +65,31 @@ var otherFriends = function () {
 };
 */
 
-
+//*********************************************************
 //Main Code
-console.log("I have a bunch of pictures I want to post online and I'd like you to help me out.");
 
-//Procedure
-getHelp();
+alert("I have a bunch of pictures I want to post online and I'd like you to help me out.");
 
-/*//Confirm
-var myConfirm = ask();
+//Prompt
+
+var myPrompt = prompt("Do you think " + social + " or Facebook would be better to use for this project?");
+
+//Procedure call
+
+getHelp(myPrompt);
+
+//Confirm
+
+var askIfReady = confirm("Are you ready to start posting these pics?");
+
 
 //Boolean Function Return
-var getGoing = returnBoolean(myConfirm, theBest);
-console.log(getGoing);
 
-//Number Function Return
+
+
+//console.log(getGoing);
+
+/*//Number Function Return
 var finalCount = taggedFriends();
 console.log(finalCount);
 
@@ -84,18 +98,5 @@ var nameAll = otherFriends();
 console.log(nameAll);
 
 //Final Output
-console.log("I think we are all done here. Thanks so much for helping me post and tag this picture to " + social + ". And for helping remember everyone's names.");*/
-
-
-// Function Practice
-
-
-var pi = 3.14159;
-
-var getArea = function () {
-    console.log("getArea fired!");
-};
-
-console.log("I'm first");
-
-getArea();
+console.log("I think we are all done here. Thanks so much for helping me post and tag this picture to " + social + ". And for helping remember everyone's names.");
+*/
