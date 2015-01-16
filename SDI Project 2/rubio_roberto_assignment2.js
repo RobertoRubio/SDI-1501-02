@@ -12,8 +12,8 @@ var maxPhotos = 1;
 
 //Procedure
 
-function getHelp (p) {
-    if (p === social) {
+function getHelp (mp) {
+    if (mp === social) {
         alert("I know I love it too!");
     }  else {
         alert("Eh, it's ok but I use " + social + " more.");
@@ -31,16 +31,19 @@ function getAnswer (){
 
 //Boolean Function
 
-
-
-
+function checkAnswer (ready,best){
+    while (!ready && best) {
+        var askAgain = ifReady;
+        return askAgain;
+    } alert("OK Let's get posting.");
+};
 //Number Function
 
-function upLoad(mp){
-      for (mp; mp < 11; mp ++){
-        console.log("Uploading " + mp + " photo.");
+function upLoad (photos){
+      for (photos; photos < 11; photos ++){
+        console.log("Uploading " + photos + " photo.");
       }
-      var totalPhoto = mp -1;
+      var totalPhoto = photos -1;
         return totalPhoto;
 };
 
@@ -59,13 +62,7 @@ function revelation(n){
     reveal = alert("Oh yeah it is " + n + " in this photo!");
     return reveal;
 };
-/*
-var otherFriends = function () {
-    var otherFriendsNames = prompt ("Hey what were the other 2 people's names?", "name & name");
-    everyone = "Oh yeah that's right their names are " + otherFriendsNames + ". I almost forgot.";
-    return everyone;
-};
-*/
+
 
 //*********************************************************
 //Main Code
@@ -81,13 +78,14 @@ getHelp(myPrompt);
 
 //confirm Function Call
 
-var ready = getAnswer();
-console.log(ready);
+var ifReady = getAnswer();
 
 //Boolean Function Call
+
+checkAnswer(ifReady, theBest);
+
 //Number Function Return
 
-alert("lets start uploading!");
 var finishedUpload = upLoad(maxPhotos);
 alert("We have successfully uploaded " + finishedUpload + " photos to " + social + " !");
 
