@@ -14,9 +14,9 @@ var maxPhotos = 1;
 
 function getHelp (p) {
     if (p === social) {
-        console.log("I know I love it too!");
+        alert("I know I love it too!");
     }  else {
-        console.log("Eh, it's ok but I use " + social + " more.");
+        alert("Eh, it's ok but I use " + social + " more.");
     }
  };
 
@@ -43,25 +43,23 @@ function upLoad(mp){
       var totalPhoto = mp -1;
         return totalPhoto;
 };
-/*var numberOfPhotos = function () {
-    var countPhotos = prompt ("How many photos are we uploading?");
-    countPhotos = parseInt(countPhotos);
-    return countPhotos;
-};
 
-function photoUpload(cp){
-    for (cp; cp >= 0; cp --){
-        console.log(cp + " photos are left to upload.");
-    }
-};
-  88888888888888888888888888888888888888888888888 
-   /*
-        var totalPhotos = console.log"Alright we uploaded all " + cp + " of our photos!";
-        return totalPhotos;
+
+//Promtp for String Function
+
+function nameFriends(){
+    var askNames = prompt("Who are those 2 people in this photo?", "Robert & Benjamin");
+    return askNames;
 };
 
 
 //String Function
+
+function revelation(n){
+    reveal = alert("Oh yeah it is " + n + " in this photo!");
+    return reveal;
+};
+/*
 var otherFriends = function () {
     var otherFriendsNames = prompt ("Hey what were the other 2 people's names?", "name & name");
     everyone = "Oh yeah that's right their names are " + otherFriendsNames + ". I almost forgot.";
@@ -83,28 +81,23 @@ getHelp(myPrompt);
 
 //confirm Function Call
 
-var askIfReady = getAnswer();
-console.log(askIfReady);
+var ready = getAnswer();
+console.log(ready);
 
 //Boolean Function Call
-alert("lets start uploading!");
-var totalPhoto = upLoad(maxPhotos);
-alert("You have successfully uploaded " + totalPhoto + " photos to " + social + " !");
 //Number Function Return
-/*
-var countPhotos = numberOfPhotos();
-alert("Let's get started!");
-photoUpload(countPhotos);
-alert("you have successfully uploaded all " + countPhotos + " of your photos!");
-88888888888888888888888888888888888888888888888888888888888888888888888888888
-*/
 
-//console.log(finalCount);
+alert("lets start uploading!");
+var finishedUpload = upLoad(maxPhotos);
+alert("We have successfully uploaded " + finishedUpload + " photos to " + social + " !");
 
-/*//String Function Return
-var nameAll = otherFriends();
-console.log(nameAll);
+//Prompt For String Function Return
+
+var names = nameFriends();
+
+//String Function Return
+var rev = revelation(names);
+
 
 //Final Output
-console.log("I think we are all done here. Thanks so much for helping me post and tag this picture to " + social + ". And for helping remember everyone's names.");
-*/
+alert("I think we are all done here. Thanks so much for helping me post these " + finishedUpload + " photos, figuring out that " + names + " were both in my photo and for putting up with me. Bye!");
