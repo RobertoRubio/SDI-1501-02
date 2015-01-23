@@ -59,7 +59,7 @@ function nameFriends(){
 //String Function
 
 function revelation(n){
-    reveal = alert("Oh yeah it is " + n + " in this photo!");
+    var reveal = alert("Oh yeah it is " + n + " in this photo!");
     return reveal;
 };
 
