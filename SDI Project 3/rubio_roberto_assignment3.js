@@ -19,32 +19,28 @@ function beingSelfish (wtd){
     console.log("Yeah I would like to see my friends but I think my family will get upset.")
   }
 };
-/*
-function getHelp (mp) {
-    if (mp === social) {
-        alert("I know I love it too!");
-    }  else {
-        alert("Eh, it's ok but I use " + social + " more.");
-    }
- };
 
+//Function
 
-//Confirm Function
-
-function getAnswer (){
-    var askIfReady = confirm("Are you ready to start posting these pics?");
-    return askIfReady;
+function askFamily (){
+    var question = confirm("Well I am hungry! Are you hungry?");
+    return question;
 };
-
 
 //Boolean Function
 
-function checkAnswer (ready,best){
-    while (!ready && best) {
-        var askAgain = ifReady;
-        return askAgain;
-    } alert("OK Let's get posting.");
+function checkAnswer (are, hun){
+    var badAnswer = false;
+    while (!badAnswer || false) {
+        var askAgain = confirm("Are you sure you aren't hungry?");
+        if (askAgain === true) {
+            console.log("I'm glad you said that!");
+            badAnswer = true;
+        }
+    } 
 };
+/*
+
 //Number Function
 
 function upLoad (photos){
@@ -81,23 +77,22 @@ console.log("It's Sunday and that means family time.");
 
 var whatToDo = confirm("Do you think I should hang out with my family today?");
 
-//Procedure call
+//Procedure Call
 
 beingSelfish(whatToDo);
-/*
-var myPrompt = prompt("Do you think " + social + " or Facebook would be better to use for this project?");
-
-//Procedure call
-
-getHelp(myPrompt);
 
 //confirm Function Call
 
-var ifReady = getAnswer();
+var areHungry = askFamily();
 
-//Boolean Function Call
+//Boolean Funciton Call
 
-checkAnswer(ifReady, theBest);
+checkAnswer(areHungry, hungry);
+
+
+/*
+
+
 
 //Number Function Return
 

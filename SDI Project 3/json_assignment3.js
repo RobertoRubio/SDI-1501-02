@@ -1,25 +1,5 @@
 // Json files
-var myCrew = {
-    "Friends": [
-        {
-            "Name"   : "David",
-            "Age"    : 30,
-            "Number" : 2101234567
-        },
-        
-        {
-            "Name"   : "Andrew",
-            "Age"    : 29,
-            "Number" : 2109876543
-        },
-        
-        {
-            "Name"   : "Rupert",
-            "Age"    : 27,
-            "Number" : 5128974567
-        }
-    ]
-};
+
 var family = {
     "Blood": [
         {
