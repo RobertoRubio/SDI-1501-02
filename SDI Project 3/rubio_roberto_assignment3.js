@@ -22,7 +22,7 @@ function beingSelfish (wtd){
 
 //Function
 
-function askFamily (){
+function ask (){
     var question = confirm("Well I am hungry! Are you hungry?");
     return question;
 };
@@ -39,34 +39,16 @@ function checkAnswer (are, hun){
         }
     } 
 };
-/*
 
 //Number Function
 
-function upLoad (photos){
-      for (photos; photos < 11; photos ++){
-        console.log("Uploading " + photos + " photo.");
-      }
-      var totalPhoto = photos -1;
-        return totalPhoto;
+function callFamily (fam){
+    for (family.Blood; family.blood < family.Blood.length; family.Blood ++){
+        console.log(family.Blood);
+    }
+    return family.Blood;
 };
 
-
-//Promtp for String Function
-
-function nameFriends(){
-    var askNames = prompt("Who are those 2 people in this photo?", "Robert & Benjamin");
-    return askNames;
-};
-
-
-//String Function
-
-function revelation(n){
-    var reveal = alert("Oh yeah it is " + n + " in this photo!");
-    return reveal;
-};
-*/
 
 //*********************************************************
 //Main Code
@@ -83,29 +65,10 @@ beingSelfish(whatToDo);
 
 //confirm Function Call
 
-var areHungry = askFamily();
+var areHungry = ask();
 
 //Boolean Funciton Call
 
 checkAnswer(areHungry, hungry);
 
-
-/*
-
-
-
-//Number Function Return
-
-var finishedUpload = upLoad(maxPhotos);
-alert("We have successfully uploaded " + finishedUpload + " photos to " + social + " !");
-
-//Prompt For String Function Return
-
-var names = nameFriends();
-
-//String Function Return
-var rev = revelation(names);
-
-
-//Final Output
-alert("I think we are all done here. Thanks so much for helping me post these " + finishedUpload + " photos, figuring out that " + names + " were both in my photo and for putting up with me. Bye!");*/
+var familyCalls = callFamily(family.Blood);
